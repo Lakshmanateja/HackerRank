@@ -1,0 +1,10 @@
+m=int(input())
+list1=list(map(int,input().split()))
+n=int(input())
+list2=list(map(int,input().split()))
+set1=set(list1)
+set2=set(list2)
+list3=list((set1.union(set2)-set1.intersection(set2)))
+list3.sort()
+for i in range(len(list3)):
+    print(list3[i])
