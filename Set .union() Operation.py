@@ -1,0 +1,6 @@
+n=int(input())
+list1=set(list(map(int,input().split())))
+m=int(input())
+list2=set(list(map(int,input().split())))
+set1=list1.union(list2)
+print(len(set1))
